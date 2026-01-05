@@ -1,0 +1,71 @@
+/* tailwind css file... */
+@import 'tailwindcss';
+/* import google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Heebo:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* tailwind directives... */
+/* font family & color */
+@theme {
+    /* font-family */
+    --font-roboto: "Roboto Condensed", sans-serif;
+    --font-fredoka: "Fredoka", sans-serif;
+    --font-heebo: "Heebo", sans-serif;
+    /* color */
+    /* 1. */
+    --color-yellow-500: #FAD505;
+    /*  2.*/
+    --color-orange-50: #FFf3e8;
+    --color-orange-500: #FE8614;
+    /* 3.black */
+    --color-black-700: #030712;
+    --color-black-600: #111827;
+}
+
+@layer components {
+
+    .app-container {
+        @apply max-w-7xl mx-auto;
+    }
+
+    /* grid start... */
+    .mobile-padding {
+        @apply px-1.5 lg:px-0;
+    }
+
+    .mobile-margin {
+        @apply mx-2 lg:mx-0;
+    }
+
+    .xs-text {
+        @apply text-xs text-white font-fredoka font-normal leading-[150%] tracking-[.01em];
+    }
+
+    .sm-text {
+        @apply text-sm text-white font-normal font-roboto leading-[150%] tracking-[-0.01em]
+    }
+
+    .base-text {
+        @apply text-base text-white font-medium font-fredoka leading-[150%] tracking-tight
+    }
+
+    .heading-2xl {
+        @apply text-2xl text-orange-500 font-semibold font-fredoka leading-[150%]
+    }
+
+    /* grid end... */
+    /*typography start.... */
+
+    /* typography end.. */
+
+}
+
+/* @layer utilities{
+মনে রাখবেন:/* ভুল  */
+/* .2xl-text { ... } */
+/* অথবা */
+/* .heading-2xl { ... } */
+/* CSS class name অবশ্যই letter, underscore (_), অথবা hyphen (-) দিয়ে শুরু হতে হবে */
+/* Number দিয়ে শুরু করা যাবে না */
+/* Number মাঝে বা শেষে থাকতে পারে (যেমন: heading-2xl, text2xl) */
+
