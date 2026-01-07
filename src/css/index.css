@@ -1,7 +1,6 @@
 /* tailwind css file... */
 @import 'tailwindcss';
 /* import google fonts */
-
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Heebo:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* tailwind directives... */
@@ -13,30 +12,47 @@
     --font-heebo: "Heebo", sans-serif;
     /* color */
     /* 1. */
-    --color-yellow-500: #FAD505;
+    --color-white-yellow-500: #FAD505;
     /*  2.*/
     --color-orange-50: #FFf3e8;
     --color-orange-500: #FE8614;
     /* 3.black */
-    --color-black-700: #030712;
+    --color-black-500: #303840;
     --color-black-600: #111827;
+    --color-black-700: #030712;
 }
 
 @layer components {
 
-    .app-container {
-        @apply max-w-7xl mx-auto;
-    }
+    /* .app-container {
+        @apply w-[1400px] mx-auto;
+    } use kori nai */
 
     /* grid start... */
     .mobile-padding {
-        @apply px-1.5 lg:px-0;
+        @apply px-2.5 lg:px-0;
     }
 
     .mobile-margin {
         @apply mx-2 lg:mx-0;
     }
 
+    /* button start........ */
+    .swiper-left {
+        @apply size-10 rounded-full bg-white shadow-lg text-2xl text-black-500 invisible group-hover:visible hover:bg-white-yellow-500 cursor-pointer absolute top-1/2 -translate-y-1/2 left-1 lg:-left-6 z-10 inline-flex justify-center items-center
+    }
+
+    .swiper-right {
+        @apply size-10 rounded-full bg-white shadow-lg text-2xl text-black-500 invisible group-hover:visible hover:bg-white-yellow-500 cursor-pointer absolute top-1/2 -translate-y-1/2 right-1 lg:-right-6 z-10 inline-flex justify-center items-center
+    }
+
+    /* button end........ */
+    /* icon start.. */
+    .product-icon-layout {
+        @apply size-9 rounded-full border border-gray-300 bg-white hover:border-white-yellow-500 inline-flex justify-center items-center cursor-pointer text-sm text-black-700 hover:text-white-yellow-500
+    }
+
+    /* icon end.. */
     .xs-text {
         @apply text-xs text-white font-fredoka font-normal leading-[150%] tracking-[.01em];
     }
@@ -53,11 +69,80 @@
         @apply text-2xl text-orange-500 font-semibold font-fredoka leading-[150%]
     }
 
+    .product-branding-text {
+        @apply text-xs lg:text-lg text-[#2975cc] font-normal font-heebo leading-[150%] capitalize
+    }
+
+    .product-branding-text-two {
+        @apply text-base lg:text-xl text-black-500 font-normal font-heebo leading-[130%] uppercase
+    }
+
+    .product-heading-text {
+        @apply lg:text-[26px] lg:text-[50px] text-black-500 font-normal font-heebo leading-[100%]
+    }
+
+    .product-name {
+        @apply font-normal
+    }
+
+    .price-text {
+        @apply text-sm lg:text-[18px] text-black-500 font-medium font-heebo leading-[140%]
+    }
+
+    .price-text-two {
+        @apply text-xl lg:text-[30px] text-black-500 font-semibold font-heebo leading-[130%];
+    }
+
     /* grid end... */
     /*typography start.... */
+    .text-15px-normal-black {
+        @apply text-[15px] text-black-500 font-normal font-heebo leading-[150%];
+    }
+
+    .text-15px-semibold-black {
+        @apply text-[15px] text-black-500 font-semibold font-heebo leading-[150%];
+    }
+
+    .text-15px-normal-white {
+        @apply text-[15px] text-white font-normal font-heebo leading-[150%];
+    }
+
+    .text-15px-normal-gray {
+        @apply text-[15px] text-[#6b8499] font-normal font-heebo leading-[150%];
+    }
+
+    .text-15px-blue-medium {
+        @apply text-sm lg:text-[15px] text-[#2975cc] font-medium font-heebo leading-[150%];
+    }
+
+    .text-18px-black-medium {
+        @apply text-sm lg:text-lg text-black-700 font-medium font-heebo leading-[140%]
+    }
+
+    /* .text-20px-white {
+        @apply text-xl text-white font-medium font-heebo leading-[140%];
+    } */
+
+
+    .text-24px {
+        @apply text-base lg:text-2xl text-black-600 font-medium font-heebo leading-[150%]
+    }
 
     /* typography end.. */
+    /* layout start..... */
+    .product-badge-layout {
+        @apply text-xs text-white font-normal font-heebo leading-[150%] capitalize px-2.5 py-0.5 bg-[#ff6868] rounded-full
+    }
 
+    .product-discount-badge {
+        @apply size-10 lg:size-15 rounded-full bg-[#ff6868] inline-flex justify-center items-center text-sm lg:text-xl text-white font-medium font-heebo leading-[140%];
+    }
+
+    .add-to-cart {
+        @apply inline-block px-5 lg:px-8 py-2 lg:py-3 rounded-md bg-yellow-400 text-sm lg:text-[15px] text-black font-medium font-heebo capitalize hover:text-white hover:bg-black-600
+    }
+
+    /* layout end..... */
 }
 
 /* @layer utilities{
@@ -68,4 +153,3 @@
 /* CSS class name অবশ্যই letter, underscore (_), অথবা hyphen (-) দিয়ে শুরু হতে হবে */
 /* Number দিয়ে শুরু করা যাবে না */
 /* Number মাঝে বা শেষে থাকতে পারে (যেমন: heading-2xl, text2xl) */
-

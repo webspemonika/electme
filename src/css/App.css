@@ -1,4 +1,19 @@
 /* global css file... */
+/* 1. swiper pagination start.... */
+#hero-section .swiper .swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background-color: #FAD505;
+}
+#hero-section .swiper .swiper-pagination-bullet{
+    /* background: ; */
+    border:2px solid #Ffcc00;
+    background-color: white;
+    height: 15px;
+    width: 15px;
+}
+#hero-section .swiper{
+    /* padding-bottom: 50px; */
+}
+/* 1. swiper pagination end.... */
 .slide-underline {
     display: inline-block;
     position: relative;

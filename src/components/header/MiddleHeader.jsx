@@ -39,7 +39,7 @@ const MiddleHeader = () => {
 
     return (
         <section className="bg-black-700 py-1">
-            <div className="app-container">
+            <div className="container mx-auto">
                 {/* top start... */}
                 <div className=" hidden lg:flex justify-between items-center py-3 border-b border-white/30">
                     {/*top-left content start... */}

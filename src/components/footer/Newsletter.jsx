@@ -7,7 +7,7 @@ const Newsletter = () => {
         <>
             <div className="bg-[url(/bg-images/top-footer-bg.png)] bg-no-repeat bg-cover bg-center h-4 lg:h-7 "></div>
             <section className="bg-black-700 py-7 lg:py-9.5 ">
-                <div className="app-container">
+                <div className="container mx-auto">
                     <div className="mobile-padding grid grid-cols-1 lg:grid-cols-2 justify-between items-center gap-4  ">
                         {/* left content start...*/}
                         <div className="w-full lg:w-[60%] text-center lg:text-left ">

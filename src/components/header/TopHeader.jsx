@@ -33,8 +33,8 @@ const TopHeader = () => {
                 <div className="relative">
 
                     {/* navigation btn start  ... */}
-                    <button type="button" className='prev-btn cursor-pointer text-2xl text-white  outline-none absolute -left-5 top-1/2 -translate-y-1/2 '><IoIosArrowBack /></button>
-                    <button type="button" className='next-btn cursor-pointer text-2xl  text-white outline-none absolute -right-5 top-1/2 -translate-y-1/2 '><IoIosArrowForward /></button>
+                    <button className='header-prev-btn cursor-pointer text-2xl text-white  outline-none absolute -left-5 top-1/2 -translate-y-1/2 '><IoIosArrowBack /></button>
+                    <button className='header-next-btn cursor-pointer text-2xl  text-white outline-none absolute -right-5 top-1/2 -translate-y-1/2 '><IoIosArrowForward /></button>
                     {/* navigation btn end  ... */}
                     <Swiper
                         slidesPerView={1}
@@ -46,8 +46,8 @@ const TopHeader = () => {
                             disableOnInteraction: false
                         }}
                         navigation={{
-                            prevEl: ".prev-btn",
-                            nextEl: ".next-btn"
+                            prevEl: ".header-prev-btn",
+                            nextEl: ".header-next-btn"
                         }}
                     >
                         {deliveryFeatures.map((feature) => (

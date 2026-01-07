@@ -119,7 +119,7 @@ const Footer = () => {
         <>
             {/* footer ... */}
             <footer className="py-5 lg:py-10 bg-black-700 border-y border-y-white/20 ">
-                <div className="app-container">
+                <div className="container mx-auto">
                     <div className="grid lg:grid-cols-5 gap-2 lg:gap-0">
                         {/* left content start... */}
                         <div className="col-span-2 w-[70%] ">
