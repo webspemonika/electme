@@ -8,12 +8,12 @@ const SpecialOfferBannerSection = () => {
                 <div className="mobile-padding grid grid-cols-1 lg:grid-cols-3 gap-5">
                     <div className="">
                         <BannerProductLayout
-                            image={"/public/bg-images/banner-bg/2-fan-banner-bg.jpg"}
+                            image={"/bg-images/banner-bg/2-fan-banner-bg.jpg"}
                         />
                     </div>
                     <div className="lg:col-span-2">
                         <BannerProductLayout
-                            image={"/public/bg-images/banner-bg/laptop-banner-bg.jpg"}
+                            image={"/bg-images/banner-bg/laptop-banner-bg.jpg"}
                         />
                     </div>
                 </div>

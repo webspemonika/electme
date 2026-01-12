@@ -1,10 +1,11 @@
 import React from 'react';
+import ErrorSection from '../sections/ErrorSection';
 
 const ErrorPage = () => {
     return (
-        <div>
-            i am error page
-        </div>
+     <>
+     <ErrorSection/>
+     </>
     );
 };
 

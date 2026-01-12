@@ -14,7 +14,7 @@ const WeekenDeals = () => {
     const dealsProducts = [
         {
             id: 1,
-            productImage: "/public/images/week-deals-product/computer-specker.jpg",
+            productImage: "/images/week-deals-product/computer-specker.jpg",
             productTitle: "Basics USB Plug-n-Play Computer Speakers for PC",
             rating: "4",
             newPrice: "$456",
@@ -23,7 +23,7 @@ const WeekenDeals = () => {
         },
         {
             id: 2,
-            productImage: "/public/images/week-deals-product/gaming.jpg",
+            productImage: "/images/week-deals-product/gaming.jpg",
             productTitle: "Basics USB Plug-n-Play Computer Speakers for PC",
             rating: "4",
             newPrice: "$456",
@@ -32,7 +32,7 @@ const WeekenDeals = () => {
         },
         {
             id: 3,
-            productImage: "/public/images/week-deals-product/headphone.jpg",
+            productImage: "/images/week-deals-product/headphone.jpg",
             productTitle: "Basics USB Plug-n-Play Computer Speakers for PC",
             rating: "4",
             newPrice: "$456",
@@ -41,7 +41,7 @@ const WeekenDeals = () => {
         },
         {
             id: 4,
-            productImage: "/public/images/week-deals-product/wireless-headset.jpg",
+            productImage: "/images/week-deals-product/wireless-headset.jpg",
             productTitle: "Basics USB Plug-n-Play Computer Speakers for PC",
             rating: "4",
             newPrice: "$456",
@@ -49,7 +49,7 @@ const WeekenDeals = () => {
         },
         {
             id: 5,
-            productImage: "/public/images/week-deals-product/gaming.jpg",
+            productImage: "/images/week-deals-product/gaming.jpg",
             productTitle: "Basics USB Plug-n-Play Computer Speakers for PC",
             rating: "4",
             newPrice: "$456",
@@ -57,7 +57,7 @@ const WeekenDeals = () => {
         },
         {
             id: 6,
-            productImage: "/public/images/week-deals-product/computer-specker.jpg",
+            productImage: "/images/week-deals-product/computer-specker.jpg",
             productTitle: "Basics USB Plug-n-Play Computer Speakers for PC",
             rating: "4",
             newPrice: "$456",
@@ -67,7 +67,7 @@ const WeekenDeals = () => {
     ]
 
     return (
-        <section className="">
+        <section className="pb-5 lg:py-0">
             <div className="container mx-auto ">
                 <div className="mobile-padding  relative group">
                     {/* header start... */}

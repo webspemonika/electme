@@ -26,7 +26,7 @@ const HomePage = () => {
       <CustomerReviewSection/>
       <BlogSection/>
       {/* 10 sections end--- */}
-      <CompanyLogoSection/>
+      {/* <CompanyLogoSection/> */}
       </>
     );
 };

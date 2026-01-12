@@ -11,7 +11,9 @@ const ProductLayout = ({ product }) => {
     return (
         <div
 
-            className="py-3.75 px-2.5  group/item  cursor-pointer relative overflow-hidden">
+            className="py-3.75 px-2.5  group/item  cursor-pointer relative overflow-hidden
+            after-border
+            ">
             {/* 1.product-image */}
             <img
                 onMouseEnter={() => setIsHovered(true)}

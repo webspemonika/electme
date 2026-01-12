@@ -92,7 +92,7 @@ const ProductCategorySection = () => {
                    {/* header end... */}
 
                     {/* body start.... */}
-                    <div className=" mt-10 relative group">
+                    <div className=" mt-10 relative group ">
                         <button className='prev-btn swiper-left '>   <IoIosArrowBack /> </button>
                         <button className='next-btn swiper-right '>  <IoIosArrowForward /> </button>
 
@@ -106,28 +106,35 @@ const ProductCategorySection = () => {
                             }}
                             speed={1000}
                             loop={true}
-                            breakpoints={{
-                                0: { sliderPerView: 2.5, spaceBetween: 10 },
-                                320: { slidesPerView: 2.5, spaceBetween: 10 },
-                                480: { slidesPerView: 3, },
-                                768: { slidesPerView: 4, },
-                                1024: { slidesPerView: 8, }
+                        breakpoints={{
+                                // Mobile (320px and up)
+                                320: { slidesPerView: 1.5, spaceBetween: 10, },
+                                // Small Mobile (480px and up)
+                                480: { slidesPerView: 2.5, spaceBetween: 10, },
+                                // Tablet Portrait (640px and up)
+                                640: { slidesPerView: 4, spaceBetween: 10, },
+                                // Tablet Landscape (768px and up)
+                                768: { slidesPerView: 5, spaceBetween: 10, },
+                                // Desktop (1024px and up)
+                                1024: { slidesPerView: 6, spaceBetween: 20, },
+                                // Large Desktop (1280px and up)
+                                1280: { slidesPerView: 8, spaceBetween: 20, },
                             }}
 
 
                         >
                             {categories.map((category) => (
                                 <SwiperSlide key={category.id}>
-                                    <div className="bg-white py-2 lg:py-5 flex flex-col items-center gap-4 rounded-lg cursor-pointer group ">
+                                    <div className="bg-white py-2 lg:py-5 flex flex-col items-center gap-4 rounded-lg cursor-pointer group overflow-hidden">
                                         <img
                                             src={category.categoryImage}
                                             alt={category.categoryName}
                                             onError={(e) => {
                                                 e.target.src = '/images/category-products/placeholder.png';
                                             }}
-                                            className="size-[140px] object-cover hover:scale-110 transition-transform duration-1000 "
+                                            className="size-[140px] object-cover hover:scale-120 transition-transform duration-1000 "
                                         />
-                                        <p className=""> {category.productName} ({category.productQuantity}) </p>
+                                        <p className="text-15px-semibold-black capitalize text-center"> {category.productName} ({category.productQuantity}) </p>
                                     </div>
                                 </SwiperSlide>
                             ))}

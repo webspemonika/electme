@@ -66,12 +66,18 @@ const MiddleHeader = () => {
                             <IconText
                                 icon={<FiCheck />}
                                 text={"free shipping"}
+                                containerClassName={"gap-1"}
+                                iconClassName={"text-xs text-white capitalize font-fredoka"}
+                                textClassName={"text-xs text-white capitalize font-fredoka"}
                             />
                         </div>
                         <div className="">
                             <IconText
                                 icon={<FiCheck />}
                                 text={"safe payment"}
+                                containerClassName={"gap-1"}
+                                iconClassName={"text-xs text-white capitalize font-fredoka"}
+                                textClassName={"text-xs text-white capitalize font-fredoka"}
                             />
                         </div>
                     </div>
@@ -144,7 +150,7 @@ const MiddleHeader = () => {
                         </div>
                         <div className="hidden lg:flex gap-2">
                             <Icon
-                                route={"/login"}
+                                route={"/register"}
                                 icon={<FaRegUser />}
                                 badgeCount={0}
                             />

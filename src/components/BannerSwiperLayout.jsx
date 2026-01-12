@@ -21,7 +21,7 @@ const BannerSwiperLayout = ({product}) => {
             <img
                 src={product.image}
                 alt="product-name"
-                className=' w-full h-auto lg:h-113.75 object-cover '
+                className=' w-full h-auto  object-cover '
             />
         </div>
     );

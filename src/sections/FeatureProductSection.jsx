@@ -114,28 +114,35 @@ const FeatureProductSection = () => {
                     {/* product layout start... */}
                     <div className="relative group">
                         {/* navigation start ... */}
-                        <span className="prev-btn2 swiper-left"> <IoIosArrowBack/> </span>
+                        <span className="prev-btn2 swiper-left"> <IoIosArrowBack /> </span>
                         <span className="next-btn2 swiper-right"> <IoIosArrowForward /> </span>
                         {/* navigation end... */}
 
                         <Swiper
-                        slidesPerView={7}
-                        spaceBetween={0}
-                        modules={[Navigation]}
-                        loop={true}
-                        speed={1000}
-                        navigation={{
-                            prevEl:".prev-btn2",
-                            nextEl:".next-btn2"
-                        }}
-                        breakpoints={{
-                            0:{slidesPerView:2,spaceBetween:5},
-                            340:{slidesPerView:2,spaceBetween:5},
-                             480:{slidesPerView:3,spaceBetween:5},
-                             1024:{slidesPerView:7,spaceBetween:5},
-                            
-                        }}
-                      
+                            slidesPerView={7}
+                            spaceBetween={0}
+                            modules={[Navigation]}
+                            loop={true}
+                            speed={1000}
+                            navigation={{
+                                prevEl: ".prev-btn2",
+                                nextEl: ".next-btn2"
+                            }}
+                            breakpoints={{
+                                // Mobile (320px and up)
+                                320: { slidesPerView: 1.5, spaceBetween: 0, },
+                                // Small Mobile (480px and up)
+                                480: { slidesPerView: 2.5, spaceBetween: 0, },
+                                // Tablet Portrait (640px and up)
+                                640: { slidesPerView: 4, spaceBetween: 0, },
+                                // Tablet Landscape (768px and up)
+                                768: { slidesPerView: 4, spaceBetween: 0, },
+                                // Desktop (1024px and up)
+                                1024: { slidesPerView: 5, spaceBetween: 0, },
+                                // Large Desktop (1280px and up)
+                                1280: { slidesPerView: 7, spaceBetween: 0, },
+                            }}
+
                         >
                             {featureProducts.map((feature) => (
                                 <SwiperSlide key={feature.id} >

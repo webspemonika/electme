@@ -116,12 +116,19 @@ const NewProductsSection = () => {
                                 prevEl: ".new-product-prev-btn",
                                 nextEl: ".new-product-next-btn"
                             }}
-                            breakpoints={{
-                                0: { slidesPerView: 2, spaceBetween: 5 },
-                                340: { slidesPerView: 2, spaceBetween: 5 },
-                                480: { slidesPerView: 3, spaceBetween: 5 },
-                                1024: { slidesPerView: 7, spaceBetween: 5 },
-
+                               breakpoints={{
+                                // Mobile (320px and up)
+                                320: { slidesPerView: 1.5, spaceBetween: 0, },
+                                // Small Mobile (480px and up)
+                                480: { slidesPerView: 2.5, spaceBetween: 0, },
+                                // Tablet Portrait (640px and up)
+                                640: { slidesPerView: 4, spaceBetween: 0, },
+                                // Tablet Landscape (768px and up)
+                                768: { slidesPerView: 4, spaceBetween: 0, },
+                                // Desktop (1024px and up)
+                                1024: { slidesPerView: 5, spaceBetween: 0, },
+                                // Large Desktop (1280px and up)
+                                1280: { slidesPerView: 7, spaceBetween: 0, },
                             }}
 
                         >

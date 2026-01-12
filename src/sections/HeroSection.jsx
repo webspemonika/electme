@@ -95,7 +95,7 @@ const HeroSection = () => {
                     {/* left-content-end... */}
                     {/* right-content-start... */}
                     <div className="lg:col-span-3 space-y-2 lg:space-y-5">
-                        <div className="grid grid-cols-1 lg:grid-cols-2  gap-2 lg:gap-5">
+                        <div className="grid grid-cols-2  gap-2 lg:gap-5">
 
                             <BannerProductLayout
                                 image={"/public/bg-images/banner-bg/hero-watch-banner.jpg"}

@@ -7,7 +7,7 @@ const FooterList = ({heading,lists}) => {
      <h4 className="base-text lg:text-white text-orange-500 font-semibold mb-2 lg:mb-4.5 capitalize"> {heading} </h4>
      <ul>
         {lists?.map((list)=>(
-            <li className=""> <Link className='slide-underline sm-text text-white/80 capitalize pb-0.5' to={list.route}> {list.name} </Link> </li>
+            <li key={list.id} className=""> <Link className='slide-underline sm-text text-white/80 capitalize pb-0.5' to={list.route}> {list.name} </Link> </li>
         ))}
      </ul>
      </>

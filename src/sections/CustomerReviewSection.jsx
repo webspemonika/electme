@@ -11,14 +11,14 @@ const CustomerReviewSection = () => {
         {
             id: 1,
             reviewText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
-            reviewImage: "/public/images/clients/client-1.jpg",
+            reviewImage: "/images/clients/client-1.jpg",
             reviewerName: "alli grater",
             reviewerDesignation: "designer "
         }
         , {
             id: 2,
             reviewText: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.",
-            reviewImage: "/public/images/clients/client-2.jpg",
+            reviewImage: "/images/clients/client-2.jpg",
             reviewerName: "jone doe",
             reviewerDesignation: "engineer"
         },
@@ -26,27 +26,27 @@ const CustomerReviewSection = () => {
         {
             id: 3,
             reviewText: "Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search.",
-            reviewImage: "/public/images/clients/client-3.jpg",
+            reviewImage: "/images/clients/client-3.jpg",
             reviewerName: "rose bush",
             reviewerDesignation: "IT expert"
         }, {
             id: 4,
             reviewText: "Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search.",
-            reviewImage: "/public/images/clients/client-4.jpg",
+            reviewImage: "/images/clients/client-4.jpg",
             reviewerName: "rose bush",
             reviewerDesignation: "IT expert"
         },
         {
             id: 5,
             reviewText: "Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search.",
-            reviewImage: "/public/images/clients/client-5.jpg",
+            reviewImage: "/images/clients/client-5.jpg",
             reviewerName: "rose bush",
             reviewerDesignation: "IT expert"
         },
         {
             id: 6,
             reviewText: "Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search.",
-            reviewImage: "/public/images/clients/client-3.jpg",
+            reviewImage: "/images/clients/client-3.jpg",
             reviewerName: "rose bush",
             reviewerDesignation: "IT expert"
         }

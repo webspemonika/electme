@@ -4,7 +4,8 @@ import Rating from 'react-rating';
 
 const WeekenProduct = ({ product }) => {
     return (
-        <div className=" grid grid-cols-4 items-center gap-7.25 relative mt-5  ">
+        <div className=" grid grid-cols-4 items-center gap-7.25 relative 
+         after-border ">
             <div className="col-span-2">
                 <img
                     src={product.productImage}
